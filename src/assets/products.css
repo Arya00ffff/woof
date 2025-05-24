@@ -1,0 +1,106 @@
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  flex-grow: 1; 
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  aspect-ratio: 1 / 1; /* Makes the card a square */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image-wrapper {
+  overflow: hidden;
+  flex-grow: 1; /* Allows image wrapper to take available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  transition: transform 0.3s ease-in-out; /* For zoom effect */
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+.product-info {
+  padding: 5px;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  margin: 0 0 0px 0;
+  color: #333;
+}
+
+.product-status {
+  font-size: 0.9rem;
+  color: #5cb85c; 
+  font-weight: bold;
+}
+
+.product-status.out-of-stock {
+  color: #d9534f; 
+}
+
+
+.product-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px 0;
+  justify-content: center; /* Center items if they don't fill a row */
+}
+
+/* Default: Max 4 per row on wide screens */
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Adjust to 3 per row on medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Adjust to 2 per row on smaller screens */
+@media (min-width: 480px) and (max-width: 767px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Adjust to 1 per row on very small screens */
+@media (max-width: 479px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.no-products-message {
+  text-align: center;
+  grid-column: 1 / -1; /* Span across all columns */
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 50px;
+}

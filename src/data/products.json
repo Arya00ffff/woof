@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "status": "In Stock",
+    "price": 29.99,
+    "image": "../src/assets/products/WirelessMouse.png",
+    "description": "A sleek and responsive wireless mouse."
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "status": "In Stock",
+    "price": 79.99,
+    "image": "../src/assets/products/GamingKeyboard.png",
+    "description": "A durable mechanical keyboard with RGB lighting."
+  },
+  {
+    "id": 3,
+    "name": "Gaming Headset",
+    "status": "Out of Stock",
+    "price": 59.99,
+    "image": "../src/assets/products/GamingHeadset.png",
+    "description": "Comfortable headset with surround sound for immersive gaming."
+  },
+  {
+    "id": 4,
+    "name": "USB-C Hub",
+    "status": "In Stock",
+    "price": 39.99,
+    "image": "../src/assets/products/UsbCHub.png",
+    "description": "Expand your connectivity with this versatile USB-C hub."
+  },
+  {
+    "id": 5,
+    "name": "4K Monitor",
+    "status": "In Stock",
+    "price": 299.99,
+    "image": "../src/assets/products/4Kmonitor.png",
+    "description": "A stunning 27-inch 4K UHD monitor for crisp visuals."
+  },
+  {
+    "id": 6,
+    "name": "Portable SSD",
+    "status": "In Stock",
+    "price": 129.99,
+    "image": "../src/assets/products/PortableSSD.png",
+    "description": "Fast and compact portable SSD with 1TB storage."
+  },
+  {
+    "id": 7,
+    "name": "Wireless Charger",
+    "status": "In Stock",
+    "price": 24.99,
+    "image": "../src/assets/products/WirelessCharger.png",
+    "description": "Qi-certified wireless charger for compatible devices."
+  },
+  {
+    "id": 8,
+    "name": "Bluetooth Speaker",
+    "status": "In Stock",
+    "price": 49.99,
+    "image": "../src/assets/products/BluetoothSpeaker.png",
+    "description": "Portable Bluetooth speaker with rich sound quality."
+  },
+  {
+    "id": 9,
+    "name": "Smartwatch",
+    "status": "Out of Stock",
+    "price": 199.99,
+    "image": "../src/assets/products/smartwatch.png",
+    "description": "Track your fitness and notifications on the go."
+  },
+  {
+    "id": 10,
+    "name": "Webcam",
+    "status": "In Stock",
+    "price": 59.99,
+    "image": "../src/assets/products/Webcam.png",
+    "description": "High-definition webcam for clear video calls."
+  },
+  {
+    "id": 11,
+    "name": "Laptop Stand",
+    "status": "In Stock",
+    "price": 34.99,
+    "image": "../src/assets/products/LaptopStand.png",
+    "description": "Ergonomic laptop stand to improve posture."
+  },
+  {
+    "id": 12,
+    "name": "Wireless Earbuds",
+    "status": "In Stock",
+    "price": 89.99,
+    "image": "../src/assets/products/WirelessEarbuds.png",
+    "description": "Compact wireless earbuds with noise cancellation."
+  },
+  {
+    "id": 13,
+    "name": "External Hard Drive",
+    "status": "In Stock",
+    "price": 89.99,
+    "image": "../src/assets/products/ExternalHDD.png",
+    "description": "2TB external hard drive for extra storage."
+  },
+  {
+    "id": 14,
+    "name": "Gaming Mouse Pad",
+    "status": "In Stock",
+    "price": 19.99,
+    "image": "../src/assets/products/GamingMousePad.png",
+    "description": "Large mouse pad with smooth surface for gaming."
+  },
+  {
+    "id": 15,
+    "name": "Laptop Backpack",
+    "status": "In Stock",
+    "price": 59.99,
+    "image": "../src/assets/products/LTTBackpack.png",
+    "description": "Durable backpack with padded laptop compartment."
+  },
+  {
+    "id": 16,
+    "name": "USB Flash Drive",
+    "status": "In Stock",
+    "price": 14.99,
+    "image": "../src/assets/products/USB.png",
+    "description": "64GB USB 3.0 flash drive for quick data transfer."
+  },
+  {
+    "id": 17,
+    "name": "Wireless Keyboard",
+    "status": "In Stock",
+    "price": 49.99,
+    "image": "../src/assets/products/WirelessKeyboard.png",
+    "description": "Slim wireless keyboard with rechargeable battery."
+  },
+  {
+    "id": 18,
+    "name": "Desk Lamp",
+    "status": "In Stock",
+    "price": 27.99,
+    "image": "../src/assets/products/DeskLamp.png",
+    "description": "LED desk lamp with adjustable brightness."
+  },
+  {
+    "id": 19,
+    "name": "Noise-Canceling Headphones",
+    "status": "In Stock",
+    "price": 149.99,
+    "image": "../src/assets/products/NCHeadphones.png",
+    "description": "Over-ear headphones with active noise cancellation."
+  },
+  {
+    "id": 20,
+    "name": "Smartphone Gimbal",
+    "status": "In Stock",
+    "price": 99.99,
+    "image": "../src/assets/products/Gimbal.png",
+    "description": "Stabilizer gimbal for smooth smartphone video."
+  },
+  {
+    "id": 21,
+    "name": "Wireless Charging Pad",
+    "status": "In Stock",
+    "price": 29.99,
+    "image": "../src/assets/products/ChargingPad.png",
+    "description": "Fast wireless charging pad compatible with most phones."
+  }
+]
