@@ -1,5 +1,5 @@
 <template>
-  <div class="product-card">
+  <div class="product-card" @click="$emit('view-details', product)">
     <div class="product-image-wrapper">
       <img :src="product.image" :alt="product.name" class="product-image" />
     </div>
@@ -13,7 +13,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
 import '../assets/products.css'
 
 defineProps({
@@ -22,4 +21,6 @@ defineProps({
     required: true,
   },
 })
+
+defineEmits(['view-details'])
 </script>

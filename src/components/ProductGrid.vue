@@ -14,7 +14,6 @@
 
 <script setup>
 import ProductCard from './ProductCard.vue'
-import { defineProps, defineEmits } from 'vue'
 
 const emit = defineEmits(['open-modal'])
 
