@@ -14,6 +14,11 @@
           @view-details="openModal"
         />
       </div>
+      <div style="display: flex; justify-content: center">
+        <button class="ShowAll" @click="toggleAllProducts">
+          {{ showAllProducts ? 'Show Less' : 'Show All' }}
+        </button>
+      </div>
     </main>
 
     <ProductModal :isVisible="isModalVisible" :product="selectedProduct" @close="closeModal" />
@@ -31,17 +36,19 @@ const products = ref([])
 const searchTerm = ref('')
 const isModalVisible = ref(false)
 const selectedProduct = ref(null)
+const showAllProducts = ref(false)
 
 onMounted(() => {
   products.value = productsData
 })
 
 const filteredProducts = computed(() => {
-  if (!searchTerm.value) {
-    return products.value
+  let filtered = products.value
+  if (searchTerm.value) {
+    const searchLower = searchTerm.value.toLowerCase()
+    filtered = filtered.filter((product) => product.name.toLowerCase().includes(searchLower))
   }
-  const searchLower = searchTerm.value.toLowerCase()
-  return products.value.filter((product) => product.name.toLowerCase().includes(searchLower))
+  return showAllProducts.value ? filtered : filtered.slice(0, 8)
 })
 
 const openModal = (product) => {
@@ -53,4 +60,29 @@ const closeModal = () => {
   isModalVisible.value = false
   selectedProduct.value = null
 }
+
+const toggleAllProducts = () => {
+  showAllProducts.value = !showAllProducts.value
+}
 </script>
+
+<style scoped>
+.ShowAll {
+  display: flex;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.ShowAll:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+</style>
