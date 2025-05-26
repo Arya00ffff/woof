@@ -16,6 +16,9 @@
           </p>
           <p class="modal-price">${{ product.price.toFixed(2) }}</p>
           <p class="modal-description">{{ product.description }}</p>
+          <RouterLink :to="'/product/' + product.id">
+            <button class="Go-to-page">Go to product page</button>
+          </RouterLink>
         </div>
       </div>
     </div>
@@ -24,6 +27,7 @@
 
 <script setup>
 import '../assets/modal.css'
+import { RouterLink, useRoute } from 'vue-router'
 
 defineProps({
   isVisible: Boolean,
@@ -32,3 +36,24 @@ defineProps({
 
 defineEmits(['close'])
 </script>
+
+<style scoped>
+.Go-to-page {
+  display: flex;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: left;
+  justify-content: left;
+}
+.Go-to-page:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+</style>
