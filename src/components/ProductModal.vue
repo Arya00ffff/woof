@@ -27,7 +27,7 @@
 
 <script setup>
 import '../assets/modal.css'
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink } from 'vue-router'
 
 defineProps({
   isVisible: Boolean,

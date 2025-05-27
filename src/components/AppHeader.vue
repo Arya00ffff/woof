@@ -3,7 +3,7 @@
     <div class="logo">
       <img src="../assets/icons/logo.png" alt="Company Logo" class="logo-img" />
     </div>
-    <div class="search-bar">
+    <div class="search-bar" :style="{ display: isHome ? 'flex' : 'none' }">
       <input
         type="text"
         placeholder="Search products by name..."
@@ -18,8 +18,11 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 import '../assets/header.css'
 
+const route = useRoute()
 defineProps({
   searchTerm: {
     type: String,
@@ -31,4 +34,5 @@ const emit = defineEmits(['update:searchTerm'])
 function onInput(e) {
   emit('update:searchTerm', e.target.value)
 }
+const isHome = computed(() => route.path === '/')
 </script>
