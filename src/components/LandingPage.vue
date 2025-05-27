@@ -30,7 +30,7 @@ import { ref, computed, onMounted } from 'vue'
 import Header from '../components/AppHeader.vue'
 import ProductCard from '../components/ProductCard.vue'
 import ProductModal from '../components/ProductModal.vue'
-import productsData from '../data/products.json'
+import axios from 'axios'
 
 const products = ref([])
 const searchTerm = ref('')
@@ -38,8 +38,13 @@ const isModalVisible = ref(false)
 const selectedProduct = ref(null)
 const showAllProducts = ref(false)
 
-onMounted(() => {
-  products.value = productsData
+onMounted(async () => {
+  try {
+    const response = await axios.get('http://localhost:3000/products')
+    products.value = response.data
+  } catch (error) {
+    console.error('Error fetching products:', error)
+  }
 })
 
 const filteredProducts = computed(() => {

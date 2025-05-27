@@ -1,13 +1,22 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import productsData from '../data/products.json'
+import axios from 'axios'
 import AppHeader from '../components/AppHeader.vue'
 import '../assets/products.css'
 
+const products = ref([])
+onMounted(async () => {
+  try {
+    const response = await axios.get('http://localhost:3000/products')
+    products.value = response.data
+  } catch (error) {
+    console.error('Error fetching products:', error)
+  }
+})
 const route = useRoute()
 const productId = computed(() => route.params.id)
-const product = computed(() => productsData.find((p) => String(p.id) === String(productId.value)))
+const product = computed(() => products.value.find((p) => String(p.id) === String(productId.value)))
 </script>
 // I have no other way of rendering this
 <template>
