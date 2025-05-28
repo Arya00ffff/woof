@@ -42,5 +42,6 @@ const product = computed(() => products.value.find((p) => String(p.id) === Strin
   </div>
   <div v-else>
     <PageNotFound />
+    <!--Fix This asap! it shows 404 on correct pages even if it exists for a split second while loading!-->
   </div>
 </template>
