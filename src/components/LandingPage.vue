@@ -37,11 +37,10 @@ const searchTerm = ref('')
 const isModalVisible = ref(false)
 const selectedProduct = ref(null)
 const showAllProducts = ref(false)
-const host = window.location.hostname
 
 onMounted(async () => {
   try {
-    const response = await axios.get(`http://${host}:3000/products`)
+    const response = await axios.get(`/api/products`)
     products.value = response.data
   } catch (error) {
     console.error('Error fetching products:', error)
