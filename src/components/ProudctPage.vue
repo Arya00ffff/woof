@@ -6,10 +6,12 @@ import AppHeader from '../components/AppHeader.vue'
 import '../assets/products.css'
 import PageNotFound from './PageNotFound.vue'
 
+const host = window.location.hostname
 const products = ref([])
+
 onMounted(async () => {
   try {
-    const response = await axios.get('http://localhost:3000/products')
+    const response = await axios.get(`http://${host}:3000/products`)
     products.value = response.data
   } catch (error) {
     console.error('Error fetching products:', error)
