@@ -22,12 +22,21 @@ const product = computed(() => products.value.find((p) => String(p.id) === Strin
 
 <template>
   <AppHeader />
-  <div v-if="product">
-    <img :src="product.image" :alt="product.name" style="max-height: 250px" />
-    <h2>{{ product.name }}</h2>
-    <p>Status: {{ product.status }}</p>
-    <p>Price: ${{ product.price.toFixed(2) }}</p>
-    <p>{{ product.description }}</p>
+  <div class="product-detail-container" v-if="product">
+    <div class="product-detail-card">
+      <img :src="product.image" :alt="product.name" class="product-detail-image" />
+      <div class="product-detail-info">
+        <h2 class="product-detail-title">{{ product.name }}</h2>
+        <p class="product-detail-status">
+          Status:
+          <span :class="{ 'out-of-stock': product.status === 'Out of Stock' }">
+            {{ product.status }}
+          </span>
+        </p>
+        <p class="product-detail-price">Price: ${{ product.price.toFixed(2) }}</p>
+        <p class="product-detail-description">{{ product.description }}</p>
+      </div>
+    </div>
   </div>
   <div v-else>
     <PageNotFound />
