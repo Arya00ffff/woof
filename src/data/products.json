@@ -5,7 +5,7 @@
       "name": "Wireless Mouse",
       "status": "In Stock",
       "price": 29.99,
-      "image": "../src/assets/products/WirelessMouse.png",
+      "image": "/products/WirelessMouse.png",
       "description": "A sleek and responsive wireless mouse."
     },
     {
@@ -13,7 +13,7 @@
       "name": "Mechanical Keyboard",
       "status": "In Stock",
       "price": 79.99,
-      "image": "../src/assets/products/GamingKeyboard.png",
+      "image": "/products/GamingKeyboard.png",
       "description": "A durable mechanical keyboard with RGB lighting."
     },
     {
@@ -21,7 +21,7 @@
       "name": "Gaming Headset",
       "status": "Out of Stock",
       "price": 59.99,
-      "image": "../src/assets/products/GamingHeadset.png",
+      "image": "/products/GamingHeadset.png",
       "description": "Comfortable headset with surround sound for immersive gaming."
     },
     {
@@ -29,7 +29,7 @@
       "name": "USB-C Hub",
       "status": "In Stock",
       "price": 39.99,
-      "image": "../src/assets/products/UsbCHub.png",
+      "image": "/products/UsbCHub.png",
       "description": "Expand your connectivity with this versatile USB-C hub."
     },
     {
@@ -37,7 +37,7 @@
       "name": "4K Monitor",
       "status": "In Stock",
       "price": 299.99,
-      "image": "../src/assets/products/4Kmonitor.png",
+      "image": "/products/4kmonitor.png",
       "description": "A stunning 27-inch 4K UHD monitor for crisp visuals."
     },
     {
@@ -45,7 +45,7 @@
       "name": "Portable SSD",
       "status": "In Stock",
       "price": 129.99,
-      "image": "../src/assets/products/PortableSSD.png",
+      "image": "/products/PortableSSD.png",
       "description": "Fast and compact portable SSD with 1TB storage."
     },
     {
@@ -53,7 +53,7 @@
       "name": "Wireless Charger",
       "status": "In Stock",
       "price": 24.99,
-      "image": "../src/assets/products/WirelessCharger.png",
+      "image": "/products/WirelessCharger.png",
       "description": "Qi-certified wireless charger for compatible devices."
     },
     {
@@ -61,7 +61,7 @@
       "name": "Bluetooth Speaker",
       "status": "In Stock",
       "price": 49.99,
-      "image": "../src/assets/products/BluetoothSpeaker.png",
+      "image": "/products/BluetoothSpeaker.png",
       "description": "Portable Bluetooth speaker with rich sound quality."
     },
     {
@@ -69,7 +69,7 @@
       "name": "Smartwatch",
       "status": "Out of Stock",
       "price": 199.99,
-      "image": "../src/assets/products/smartwatch.png",
+      "image": "/products/SmartWatch.png",
       "description": "Track your fitness and notifications on the go."
     },
     {
@@ -77,7 +77,7 @@
       "name": "Webcam",
       "status": "In Stock",
       "price": 59.99,
-      "image": "../src/assets/products/Webcam.png",
+      "image": "/products/Webcam.png",
       "description": "High-definition webcam for clear video calls."
     },
     {
@@ -85,7 +85,7 @@
       "name": "Laptop Stand",
       "status": "In Stock",
       "price": 34.99,
-      "image": "../src/assets/products/LaptopStand.png",
+      "image": "/products/LaptopStand.png",
       "description": "Ergonomic laptop stand to improve posture."
     },
     {
@@ -93,7 +93,7 @@
       "name": "Wireless Earbuds",
       "status": "In Stock",
       "price": 89.99,
-      "image": "../src/assets/products/WirelessEarbuds.png",
+      "image": "/products/WirelessEarbuds.png",
       "description": "Compact wireless earbuds with noise cancellation."
     },
     {
@@ -101,7 +101,7 @@
       "name": "External Hard Drive",
       "status": "In Stock",
       "price": 89.99,
-      "image": "../src/assets/products/ExternalHDD.png",
+      "image": "/products/ExternalHDD.png",
       "description": "2TB external hard drive for extra storage."
     },
     {
@@ -109,7 +109,7 @@
       "name": "Gaming Mouse Pad",
       "status": "In Stock",
       "price": 19.99,
-      "image": "../src/assets/products/GamingMousePad.png",
+      "image": "/products/GamingMousepad.png",
       "description": "Large mouse pad with smooth surface for gaming."
     },
     {
@@ -117,7 +117,7 @@
       "name": "Laptop Backpack",
       "status": "In Stock",
       "price": 59.99,
-      "image": "../src/assets/products/LTTBackpack.png",
+      "image": "/products/LTTBackpack.png",
       "description": "Durable backpack with padded laptop compartment."
     },
     {
@@ -125,7 +125,7 @@
       "name": "USB Flash Drive",
       "status": "In Stock",
       "price": 14.99,
-      "image": "../src/assets/products/USB.png",
+      "image": "/products/usb.png",
       "description": "64GB USB 3.0 flash drive for quick data transfer."
     },
     {
@@ -133,7 +133,7 @@
       "name": "Wireless Keyboard",
       "status": "In Stock",
       "price": 49.99,
-      "image": "../src/assets/products/WirelessKeyboard.png",
+      "image": "/products/WirelessKeyboard.png",
       "description": "Slim wireless keyboard with rechargeable battery."
     },
     {
@@ -141,7 +141,7 @@
       "name": "Desk Lamp",
       "status": "In Stock",
       "price": 27.99,
-      "image": "../src/assets/products/DeskLamp.png",
+      "image": "/products/DeskLamp.png",
       "description": "LED desk lamp with adjustable brightness."
     },
     {
@@ -149,7 +149,7 @@
       "name": "Noise-Canceling Headphones",
       "status": "In Stock",
       "price": 149.99,
-      "image": "../src/assets/products/NCHeadphones.png",
+      "image": "/products/NCHeadphones.png",
       "description": "Over-ear headphones with active noise cancellation."
     },
     {
@@ -157,7 +157,7 @@
       "name": "Smartphone Gimbal",
       "status": "In Stock",
       "price": 99.99,
-      "image": "../src/assets/products/Gimbal.png",
+      "image": "/products/Gimbal.png",
       "description": "Stabilizer gimbal for smooth smartphone video."
     },
     {
@@ -165,7 +165,7 @@
       "name": "Wireless Charging Pad",
       "status": "In Stock",
       "price": 29.99,
-      "image": "../src/assets/products/ChargingPad.png",
+      "image": "/products/Chargingpad.png",
       "description": "Fast wireless charging pad compatible with most phones."
     }
   ]
